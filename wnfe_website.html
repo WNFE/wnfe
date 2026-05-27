@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WNFE – Luisa Marques da Silva</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --accent: #2a7a9a;
+    --accent-dark: #1d5c7a;
+    --accent-light: #4aa0be;
+    --text: #1a1a1a;
+    --muted: #555;
+    --bg: #ffffff;
+    --card-bg: #f4f9fc;
+    --border: #c2dcea;
+  }
+  body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: rgba(255,255,255,0.96); backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--border); z-index: 100;
+    padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px;
+  }
+  .nav-logo { font-size: 1.4rem; font-weight: bold; color: var(--accent); letter-spacing: 0.1em; text-decoration: none; }
+  .nav-links { display: flex; gap: 1.5rem; list-style: none; flex-wrap: wrap; }
+  .nav-links a { text-decoration: none; color: var(--muted); font-family: 'Arial', sans-serif; font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--accent); }
+
+  header { padding: 120px 2rem 60px; max-width: 620px; margin: 0 auto; text-align: center; }
+  header h1 { font-size: 3.5rem; color: var(--accent); letter-spacing: 0.15em; margin-bottom: 0.4rem; }
+  .author-name { font-family: 'Arial', sans-serif; font-size: 0.95rem; color: var(--accent-light); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.4rem; }
+  .divider { width: 60px; height: 2px; background: var(--accent-light); margin: 1.4rem auto; }
+  .hero-text { font-size: 1rem; color: var(--muted); max-width: 520px; margin: 0 auto 1rem; text-align: left; }
+  .hero-sig { font-size: 0.95rem; color: var(--accent-dark); font-weight: bold; text-align: right; max-width: 520px; margin: 0 auto; }
+
+  .intro-blocks { background: var(--card-bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 50px 2rem; }
+  .intro-blocks-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 2.5rem; }
+  .intro-block { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.8rem; }
+  .intro-block h3 { font-family: 'Arial', sans-serif; font-size: 1rem; color: var(--accent-dark); letter-spacing: 0.08em; text-transform: uppercase; }
+  .intro-block p { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+  .intro-block a {
+    display: inline-block; margin-top: 0.5rem; padding: 0.45rem 1.2rem;
+    border: 1px solid var(--accent); color: var(--accent); text-decoration: none;
+    font-family: 'Arial', sans-serif; font-size: 0.78rem; letter-spacing: 0.05em;
+    border-radius: 3px; text-transform: uppercase; transition: background 0.2s, color 0.2s;
+  }
+  .intro-block a:hover { background: var(--accent); color: white; }
+
+  footer { background: var(--card-bg); border-top: 1px solid var(--border); text-align: center; padding: 1.5rem; font-family: 'Arial', sans-serif; font-size: 0.78rem; color: #aaa; letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">WNFE</a>
+  <ul class="nav-links">
+    <li><a href="contos.html">Contos</a></li>
+    <li><a href="romances.html">Romances</a></li>
+    <li><a href="olne.html">Os livros que nunca escreverei</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>WNFE</h1>
+  <div class="author-name">Luisa Marques da Silva</div>
+  <div class="divider"></div>
+  <p class="hero-text">Resolvi pôr os meus contos e os meus romances on-line, para quem os quiser ler. Não será o mesmo que ter um José ou um Rui Saramago à borla, mas se não gostares, só te custou o tempo de leitura. Serve-te à vontade e espero que te divirtas.</p>
+  <p class="hero-sig">Luísa Marques da Silva</p>
+</header>
+
+<div class="intro-blocks">
+  <div class="intro-blocks-inner">
+
+    <div class="intro-block">
+      <h3>Contos</h3>
+      <p>Alguns dos contos que podes encontrar aqui fazem parte do livro "Sete histórias por acontecer". Dois foram premiados: o Acabou-se! e o E-medo, ambos menções honrosas do prémio Manuel Teixeira Gomes (em 2001 e 2007), Câmara Municipal de Portimão.</p>
+      <a href="contos.html">Contos fantásticos</a>
+    </div>
+
+    <div class="intro-block">
+      <h3>Romances</h3>
+      <p>Que tal leres uma aventura passada no Taguspark, no campus do Técnico? Mete minotauros, flores fedorentas e até um Orc. Num outro romance a humanidade tem de aprender a lidar com software mágico.</p>
+      <a href="romances.html">Romances geniais</a>
+    </div>
+
+    <div class="intro-block">
+      <h3>Os livros que nunca escreverei</h3>
+      <p>Criei, com umas amigas, o movimento WNFE. O significado da sigla apenas é revelado aos membros com 50 anos de casa. Na verdade não sabemos o que quer dizer. Mas podes carregar no botão que é sempre giro carregar num botão.</p>
+      <a href="olne.html">Movimento WNFE</a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 WNFE · Luisa Marques da Silva · Todos os direitos reservados
+</footer>
+
+</body>
+</html>

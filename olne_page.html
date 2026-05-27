@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Os livros que nunca escreverei – WNFE</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --accent: #2a7a9a; --accent-dark: #1d5c7a; --accent-light: #4aa0be;
+    --text: #1a1a1a; --muted: #555; --bg: #ffffff; --card-bg: #f4f9fc; --border: #c2dcea;
+  }
+  body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); border-bottom: 1px solid var(--border); z-index: 100; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .nav-logo { font-size: 1.4rem; font-weight: bold; color: var(--accent); letter-spacing: 0.1em; text-decoration: none; }
+  .nav-links { display: flex; gap: 1.5rem; list-style: none; flex-wrap: wrap; }
+  .nav-links a { text-decoration: none; color: var(--muted); font-family: 'Arial', sans-serif; font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+  .page-header { padding: 100px 2rem 40px; max-width: 720px; margin: 0 auto; }
+  .page-header h2 { font-family: 'Arial', sans-serif; font-size: 1.5rem; color: var(--accent-dark); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem; }
+  .page-header p { color: var(--muted); font-size: 0.95rem; }
+  .divider { width: 60px; height: 2px; background: var(--accent-light); margin: 1.2rem 0; }
+
+  section { max-width: 720px; margin: 0 auto; padding: 0 2rem 60px; }
+
+  .olne-entry { border-left: 3px solid var(--accent-light); padding: 1rem 1.5rem; margin-bottom: 2rem; background: var(--card-bg); border-radius: 0 6px 6px 0; }
+  .entry-date { font-family: 'Arial', sans-serif; font-size: 0.72rem; color: var(--accent-light); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; }
+  .olne-entry h3 { font-size: 1rem; color: var(--accent-dark); margin-bottom: 0.6rem; }
+  .olne-entry p { font-size: 0.92rem; color: var(--muted); }
+
+  .placeholder { color: #bbb; font-style: italic; font-size: 0.92rem; padding: 1rem 0; }
+
+  footer { background: var(--card-bg); border-top: 1px solid var(--border); text-align: center; padding: 1.5rem; font-family: 'Arial', sans-serif; font-size: 0.78rem; color: #aaa; letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">WNFE</a>
+  <ul class="nav-links">
+    <li><a href="contos.html">Contos</a></li>
+    <li><a href="romances.html">Romances</a></li>
+    <li><a href="olne.html" class="active">Os livros que nunca escreverei</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <h2>Os livros que nunca escreverei</h2>
+  <div class="divider"></div>
+  <p>Uma história por dia. Duzentas palavras, no máximo. Aquilo que existe apenas aqui.</p>
+</div>
+
+<section>
+
+  <div class="olne-entry">
+    <div class="entry-date">27 de maio de 2026</div>
+    <h3>Título da primeira história</h3>
+    <p>Aqui começa a primeira história. Duzentas palavras ou menos — uma ideia, uma cena, um momento. O livro que nunca será escrito, mas que existe na mesma.</p>
+  </div>
+
+  <p class="placeholder">As próximas histórias aparecerão aqui, dia após dia.</p>
+</section>
+
+<footer>
+  © 2026 WNFE · Luisa Marques da Silva · Todos os direitos reservados
+</footer>
+</body>
+</html>
